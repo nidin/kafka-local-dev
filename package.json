@@ -1,0 +1,22 @@
+{
+  "name": "kafka-producer",
+  "version": "0.0.0",
+  "scripts": {
+    "producer": "ts-node-dev --transpile-only ./src/producer.ts",
+    "consumer": "ts-node-dev --transpile-only ./src/consumer.ts",
+    "run-kafka": "./scripts/run-kafka.sh"
+  },
+  "dependencies": {
+    "ip": "^1.1.8",
+    "kafkajs": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/ip": "^1.1.0",
+    "@types/node": "^18.11.9",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.3"
+  }
+}
